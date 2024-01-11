@@ -51,6 +51,11 @@ max_sub g(int x[], int n)
         
     }
 }
+
+max_sub dac(int x[], int n)
+{
+    
+}
 int main()
 {
     int x[] = {5, 2, -3, 1, 4, -5, 0, 3, -8};
