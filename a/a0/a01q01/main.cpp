@@ -71,20 +71,20 @@ void computeMinimal(int array[], int size)
 
 int main()
 {
-    // std::string input;
-    // std::getline(std::cin, input);
-    // std::string seperators = " \t,";
-    // TokenList tokens(input, seperators);
-    // int size = std::stoi(tokens[0]);
-    srand(time(NULL));
-    int size = rand()%18 + 2;
+    std::string input;
+    std::getline(std::cin, input);
+    std::string seperators = " \t,";
+    TokenList tokens(input, seperators);
+    int size = std::stoi(tokens[0]);
+    // srand(time(NULL));
+    // int size = rand()%18 + 2;
     int elements[size];
     std::string dir = "";
     std::cout << size << " {";
     for(int i = 0; i < size; ++i)
     {
-        elements[i] = rand()%42 + 2;
-        // elements[i] = std::stoi(tokens[i]);
+        // elements[i] = rand()%42 + 2;
+        elements[i] = std::stoi(tokens[i]);
         std::cout << dir << elements[i]; dir = ", ";
     }
     std::cout << "}\n";
